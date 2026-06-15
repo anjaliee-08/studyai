@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://studyai-kjvz.vercel.app' // replace after Vercel deploy
+    'https://studyai-ivory.vercel.app' // replace after Vercel deploy
   ],
   credentials: true
 }));
