@@ -26,7 +26,7 @@ export default function Signup() {
       await signup(form.name, form.email, form.password);
       navigate('/');
     } catch (err) {
-      setError('Something went wrong. Try again.');
+      setError(err.response?.data?.msg || err.message || 'Something went wrong. Try again.');
     }
 
     setLoading(false);
